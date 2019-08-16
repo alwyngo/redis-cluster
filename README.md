@@ -17,7 +17,7 @@ public class RedissonConfig {
     @Bean("redissonClusterClient")
     RedissonClient redissonClusterClient() {
         Config config = new Config();
-        config.useClusterServers().addNodeAddress("redis://127.0.0.1:7000", "redis://127.0.0.1:7001", "redis://127.0.0.1:7002");
+        config.useClusterServers().addNodeAddress("redis://127.0.0.1:7000", "redis://127.0.0.1:7001", "redis://127.0.0.1:7002", "redis://127.0.0.1:7003", "redis://127.0.0.1:7004", "redis://127.0.0.1:7005");
         RedissonClient client = Redisson.create(config);
 
         return client;
