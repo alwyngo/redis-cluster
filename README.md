@@ -1,5 +1,6 @@
 # redis-cluster
 
+redis 集群模式搭建
 
 ### 配置RedissonConfig
 ```java
